@@ -2,7 +2,6 @@ javascript: (function () {
   'use strict';
 
   const table = document.getElementById('dgSeisekiList').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
-  console.log(table);
   let cnt = 0;
   let GP = 0;
   const RATINGS = ['不可', '可', '良', '優', '秀'];
