@@ -1,4 +1,1 @@
-javascript: (function () {
-  'use strict';
-  alert('OK');
-})();
+alert('OK');
