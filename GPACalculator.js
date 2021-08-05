@@ -2,6 +2,7 @@ javascript: (function () {
   'use strict';
 
   const table = document.getElementById('dgSeisekiList').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+  console.log(table);
   let cnt = 0;
   let GP = 0;
   const RATINGS = ['不可', '可', '良', '優', '秀'];
@@ -18,5 +19,6 @@ javascript: (function () {
       }
     }
   }
-  alert('GPAは ' + (GP / cnt).toFixed(3) + ' です。');
+  if (cnt == 0) alert('報告済の成績がありません。');
+  else alert('GPAは ' + (GP / cnt).toFixed(3) + ' です。');
 })();
